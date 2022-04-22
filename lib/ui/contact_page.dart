@@ -198,7 +198,7 @@ class _ContactPageState extends State<ContactPage> {
                       onPressed: () {
                         Navigator.pop(context);
                         // ignore: invalid_use_of_visible_for_testing_member
-                        ImagePicker.platform.pickImage(source: ImageSource.camera)
+                        ImagePicker.platform.pickImage(source: ImageSource.camera) //preferredCameraDevice: CameraDevice.front
                           .then((file) {
                             if(file == null) return;
                             setState(() {
